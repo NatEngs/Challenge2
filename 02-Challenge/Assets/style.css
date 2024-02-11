@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+header {
+    background-color: #06779d;
+    color: whitesmoke;
+    padding: 5px;
+    max-width: 100%;
+    text-indent: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+header h1 {
+    margin: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: gray;
+}
+
+
+.p {
+    vertical-align: bottom;
+}
+
+.about {
+    color: whitesmoke;
+    min-height: 70vw;
+    max-width: 100%;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    padding-left: 20px;
+    background-image: url(./IMG_5279.jpeg);
+    background-size: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+img {
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1.0;
+}
+
+.projects {
+    display: flex;
+    max-width: 100%;
+    gap: 20px;
+    flex-direction: column;
+    margin: 0;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+
+.container, .container1, .container2, .container3, .container4 {
+    text-align: left;
+    color: whitesmoke;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    justify-content: space-around;
+}
+
+.container1 {
+    background-image: url(./cool\ project1.jpg);
+    background-size: 100%;
+    background-position: ;
+}
+
+.container2 {
+    background-image: url(./cool\ project2.jpg);
+    background-size: 100%;
+    background-position: 25%;
+}
+
+.container3 {
+    background-image: url(./cool\ project3.jpg);
+    background-size: 100%;
+    background-position: 50%;
+}
+
+.container4 {
+    background-image: url(./cool\ project4.jpg);
+    background-size: 100%;
+    background-position: 50%;
+}
+
+.container:hover,.container1:hover, .container2:hover, .container3:hover, .container4:hover  {
+    opacity: 0.5;
+    color: black;
+}
+
+.contact {
+    text-indent: 5px;
+    text-align: left;
+    max-width: 100%;
+    border-radius: 5px;
+    background-image: url("./IMG_5119.jpg");
+    background-size: 100%;
+    background-position: 60%;
+}
+
+footer {
+    background-color: #06779d;
+    color: whitesmoke;
+    padding: 5px;
+    min-width: 100%;
+    text-indent: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    position: fixed;
+    bottom: 0;
+}
