@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: 20px 0;
 }
 
 header {
@@ -14,90 +13,97 @@ header {
     border-width: 2px;
 }
 
-header h1 {
+h1 {
     margin: 0;
+    float: left;
 }
+
+.menu {
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    min-height: 100vh;
+    max-width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     flex-wrap: wrap;
     background-color: gray;
 }
 
-
-.p {
-    vertical-align: bottom;
+/* Formatting to override hyperlink text default color. */
+.a {
+    color: whitesmoke;
 }
 
 .about {
     color: whitesmoke;
-    min-height: 70vw;
+    background-image: url(./IMG_5119.jpg);
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: 65%;
+    margin-top: 20px;
+    min-height: 30vw; 
     max-width: 100%;
     border-style: solid;
     border-radius: 5px;
     border-width: 2px;
     padding-left: 20px;
-    background-image: url(./IMG_5279.jpeg);
-    background-size: 100%;
-    display: flex;
-    align-items: flex-end;
-}
-
-img {
-    opacity: 0.5;
-}
-
-img:hover {
-    opacity: 1.0;
 }
 
 .projects {
-    display: flex;
-    max-width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
     gap: 20px;
-    flex-direction: column;
-    margin: 0;
+    margin: 20px;
+    margin-bottom: 60px;
     max-width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.container, .container1, .container2, .container3, .container4 {
-    text-align: left;
-    color: whitesmoke;
-    max-width: 100%;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 20px;
+.button1, .button2, .button3, .button4 {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    width: 500px;
+    height: 250px;
+    padding: 60px;
     border-style: solid;
+    border-color: whitesmoke;
     border-radius: 5px;
     border-width: 2px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.container1 {
-    background-image: url(./cool\ project1.jpg);
-    background-size: 100%;
-    background-position: ;
-}
-
-.container2 {
-    background-image: url(./cool\ project2.jpg);
+.button1 {
+    background-image: url(./project\ 1\ screenshot.png);
     background-size: 100%;
     background-position: 25%;
 }
 
-.container3 {
+.button1:hover, .button2:hover, .button3:hover, .button4:hover {
+    opacity: 0.5;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.button2 {
+background-image: url(./cool\ project2.jpg);
+    background-size: 100%;
+    background-position: 25%;
+}
+
+.button3 {
     background-image: url(./cool\ project3.jpg);
     background-size: 100%;
     background-position: 50%;
 }
 
-.container4 {
+.button4 {
     background-image: url(./cool\ project4.jpg);
     background-size: 100%;
     background-position: 50%;
@@ -108,25 +114,17 @@ img:hover {
     color: black;
 }
 
-.contact {
-    text-indent: 5px;
-    text-align: left;
-    max-width: 100%;
-    border-radius: 5px;
-    background-image: url("./IMG_5119.jpg");
-    background-size: 100%;
-    background-position: 60%;
-}
-
 footer {
     background-color: #06779d;
     color: whitesmoke;
-    padding: 5px;
-    min-width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
     text-indent: 5px;
     border-style: solid;
     border-radius: 5px;
     border-width: 2px;
     position: fixed;
     bottom: 0;
+    margin-bottom: 0px;
 }
